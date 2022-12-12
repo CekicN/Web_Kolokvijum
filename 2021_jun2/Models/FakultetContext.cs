@@ -11,5 +11,10 @@ namespace Models
 
         public FakultetContext(DbContextOptions options) : base(options)
         {}
+
+        internal Task FindAsync(int iD)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

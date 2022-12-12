@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
+
 namespace Models
 {
     public class Predmet
@@ -11,6 +13,7 @@ namespace Models
         [Range(1,5)]
         public int Godina { get; set; }
 
+        [JsonIgnore]
         public List<Spoj> PredmetStudent { get; set; }
     }
 }
