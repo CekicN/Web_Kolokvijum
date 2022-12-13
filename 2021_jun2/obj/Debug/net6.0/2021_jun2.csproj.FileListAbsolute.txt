@@ -80,3 +80,5 @@ C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\2021_jun2\obj\De
 C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\2021_jun2\obj\Debug\net6.0\2021_jun2.pdb
 C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\2021_jun2\obj\Debug\net6.0\2021_jun2.genruntimeconfig.cache
 C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\2021_jun2\obj\Debug\net6.0\ref\2021_jun2.dll
+C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\2021_jun2\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\2021_jun2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll

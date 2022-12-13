@@ -10,9 +10,9 @@ namespace Models
         [Range(5,10)]
         public int Ocena { get; set; }
         
-        public IspitniRok IspitniRok { get; set; }
+        public virtual IspitniRok IspitniRok { get; set; }
         [JsonIgnore]
-        public Student Student { get; set; }
-        public Predmet Predmet { get; set; }
+        public virtual Student Student { get; set; }
+        public virtual Predmet Predmet { get; set; }
     }
 }

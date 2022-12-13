@@ -20,9 +20,12 @@ services.AddCors(options =>
             "http://localhost8080",
             "http://127.0.0.1:8080",
             "https://127.0.0.1:8080",
+            "https://google.com",
+            "http://google.com",
         })
         .AllowAnyHeader()
         .AllowAnyMethod();
+
     });
 });
 

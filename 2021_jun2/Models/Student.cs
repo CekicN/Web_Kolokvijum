@@ -20,6 +20,6 @@ namespace Models
         [MaxLength(50)]
         public string Prezime { get; set; }
 
-        public List<Spoj> StudentPredmet { get; set; }
+        public virtual List<Spoj> StudentPredmet { get; set; }
     }
 }

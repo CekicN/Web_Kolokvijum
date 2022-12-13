@@ -14,6 +14,6 @@ namespace Models
         public int Godina { get; set; }
 
         [JsonIgnore]
-        public List<Spoj> PredmetStudent { get; set; }
+        public virtual List<Spoj> PredmetStudent { get; set; }
     }
 }

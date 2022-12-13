@@ -11,7 +11,7 @@ namespace Models
         public string Naziv { get; set; }
 
         [JsonIgnore]
-        public List<Spoj> StudentiPredmeti { get; set; }
+        public virtual List<Spoj> StudentiPredmeti { get; set; }
 
     }
 }

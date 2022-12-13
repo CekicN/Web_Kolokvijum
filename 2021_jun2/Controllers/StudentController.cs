@@ -19,8 +19,9 @@ public class StudentController : ControllerBase
     
     [Route("Studenti")]
     [HttpGet]
-    public async Task<ActionResult> Preuzmi()
+    public async Task<ActionResult> Preuzmi([FromQuery] int[] rokIDs)
     {
+        //return Ok(podatak);
         //Lazy loading -> kad se povucu studenti imace informaciju samo o studentu dok,
         //ne  zatrebaju i podaci iz StudentPredmet(Spoj) tad ce da se povucu i ti podaci
 
@@ -28,10 +29,20 @@ public class StudentController : ControllerBase
         // student.StudentPredmet.Where(p => p.Ocena > 8);//tek ovde ce da se povucu podaci iz baze za StudentPredmet
         /******LOSE ZBOG SERIJALIZACIJE****/
         
-        //Eager loading -> ako se povuku studenti iz baze i kad se uradi ToList povlaci sve iz baze sto je lose
+        
+        //Explicit Loading --> -> ako se povuku studenti iz baze i kad se uradi ToList povlaci sve iz baze sto je lose
 
-        //Explicit Loading --> NAJBOLJI METOD
+        // var studenti = Context.Studenti;
 
+        // var student = studenti.Where(p => p.Indeks == 18477).FirstOrDefault();
+        // await Context.Entry(student).Collection(p => p.StudentPredmet).LoadAsync();
+
+        // foreach(var s in student.StudentPredmet)
+        // {
+        //     await Context.Entry(s).Reference(p => p.Predmet).LoadAsync();
+        //     await Context.Entry(s).Reference(p => p.IspitniRok).LoadAsync();
+        // }
+        
         // var studenti = Context.Studenti
         //     .Include(p => p.StudentPredmet)//Ukljucuje vezu student-predmet u studenti ce se naci studenti sa dodatom studentpredmet
         //     .ThenInclude(p => p.Predmet)//ThenInclude radi sa onim sto je prethodno ukljuceno a to je studentpredmet
@@ -39,15 +50,35 @@ public class StudentController : ControllerBase
         //     .ThenInclude(p => p.IspitniRok);//bez ToList jer ce da vrati celu bazu
         //PRAVI SE PETLJA jer se poziva studentpredmet u koji se opet poziva student i tako u krug zato se dodaje [JsonIgnore] atribut u Spoj kod studenta
 
-
+        //Eager loading --> Najbolji metod
         var studenti = Context.Studenti
                         .Include(p => p.StudentPredmet)
                         .ThenInclude(p => p.IspitniRok)
                         .Include(p => p.StudentPredmet)
                         .ThenInclude(p => p.Predmet);
 
-        var student =  await studenti.Where(p => p.Indeks == 18477).ToListAsync();
-        return Ok(student);
+        var student =  await studenti.ToListAsync();
+
+        return Ok
+        (
+            student.Select(p =>
+            new
+            {
+                ID = p.ID,
+                Index = p.Indeks,
+                Ime = p.Ime,
+                Prezime = p.Prezime,
+                Predmeti = p.StudentPredmet
+                    .Where(q => rokIDs.Contains(q.IspitniRok.ID))
+                    .Select(q =>
+                    new
+                    {
+                        Predmet = q.Predmet.Naziv,
+                        IspitniRok = q.IspitniRok.Naziv,
+                        Ocena = q.Ocena
+                    })
+            }).ToList()
+        );
 
     }
 
