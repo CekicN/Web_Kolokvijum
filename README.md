@@ -1,5 +1,4 @@
-# Web_Kolokvijum
-<h2>Zadaci iz Weba-a za kolokvijum</h2>
+# Zadaci iz Weba-a za kolokvijum
 <h3>dotnet 6.0<h3>
 <ul>
     <li>2021_jun2</li>
