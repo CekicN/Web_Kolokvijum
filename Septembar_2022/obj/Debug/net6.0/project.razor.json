@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Nikola\\Desktop\\Faks\\3.godina\\WebProgramiranje\\Blanketi\\2021_jun2\\2021_jun2.csproj",
+  "FilePath": "c:\\Users\\Nikola\\Desktop\\Faks\\3.godina\\WebProgramiranje\\Blanketi\\Septembar_2022\\Septembar_2022.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,7 +16295,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "_2021_jun2",
+  "RootNamespace": "Septembar_2022",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
