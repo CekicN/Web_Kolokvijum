@@ -68,7 +68,7 @@ public class StudentController : ControllerBase
                 Index = p.Indeks,
                 Ime = p.Ime,
                 Prezime = p.Prezime,
-                Predmeti = p.StudentPredmet
+               Predmeti = p.StudentPredmet
                     .Where(q => rokIDs.Contains(q.IspitniRok.ID))
                     .Select(q =>
                     new
