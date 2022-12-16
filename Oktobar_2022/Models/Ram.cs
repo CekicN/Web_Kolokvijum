@@ -8,6 +8,7 @@ namespace Models
         public int ID { get; set; }
 
         public required string Materijal { get; set; }
+        int BrRamova;
 
 
         public Dimenzija Dimenzija { get; set; }
