@@ -1,0 +1,35 @@
+.GlavniKontejner
+{
+    display: flex;
+    flex-direction: row;
+}
+table,th,tr,td{
+    border: 1px solid black;
+    
+}
+table
+{
+    border-collapse: collapse;
+}
+
+.Forma
+{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+}
+.cbox
+{
+    display: flex;
+    flex-direction: row;
+}
+.levi
+{
+    display: flex;
+    flex-direction: column;
+}
+.desni
+{
+    display: flex;
+    flex-direction: column;
+}

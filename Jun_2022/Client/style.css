@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pretraga
+{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+}
+
+.red
+{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content:space-between;
+}
+.container
+{
+    display: flex;
+}
+.red select
+{
+    width: 200px;
+}
+
+.rezultat
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.automobil
+{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 5px;
+    
+    text-align: center;
+    padding: 5px;
+}
+.automobil p,h1
+{
+    margin-bottom: 5px;
+}
