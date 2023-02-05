@@ -141,5 +141,26 @@ namespace Septembar_2022
                 return BadRequest(e.Message);
             }
         }
+        [Route("PromeniKolicinu/{id}")]
+        [HttpPut]
+        public async Task<ActionResult> PromeniKolicinu(int id)
+        {
+            try
+            {
+                var biljka = await context.Biljke.Where(p => p.ID == id).FirstOrDefaultAsync();
+                if(biljka == null)
+                    return BadRequest("Nije pronadjena biljka");
+                biljka.kolicina += 1;
+
+                context.Biljke.Update(biljka);
+                await context.SaveChangesAsync();
+
+                return Ok(biljka);
+            }
+            catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        } 
     }
 }

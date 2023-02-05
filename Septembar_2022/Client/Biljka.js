@@ -29,11 +29,16 @@ export class biljka
     }
     klik(ev)
     {
-        var kliknut = ev.srcElement.parentElement;
-        
-        var p = kliknut.querySelector(".kol");
 
-        var vr = parseInt(p.innerHTML) + 1;
-        p.innerHTML = vr;
+        fetch("https://localhost:7086/Controller/PromeniKolicinu/" + this.id, {method:"PUT"}).then(p => 
+        {
+            p.json().then(q => 
+            {
+                var kliknut = ev.srcElement.parentElement;
+                var z = kliknut.querySelector(".kol");
+
+                z.innerHTML = q.kolicina;
+            })
+        })
     }
 }
