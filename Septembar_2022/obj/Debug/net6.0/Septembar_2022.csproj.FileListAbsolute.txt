@@ -80,3 +80,8 @@ C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\o
 C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\obj\Debug\net6.0\Septembar_2022.pdb
 C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\obj\Debug\net6.0\Septembar_2022.genruntimeconfig.cache
 C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\obj\Debug\net6.0\ref\Septembar_2022.dll
+C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\obj\Debug\net6.0\staticwebassets\msbuild.Septembar_2022.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\obj\Debug\net6.0\staticwebassets\msbuild.build.Septembar_2022.props
+C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Septembar_2022.props
+C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Septembar_2022.props
+C:\Users\Nikola\Desktop\Faks\3.godina\WebProgramiranje\Blanketi\Septembar_2022\obj\Debug\net6.0\staticwebassets.pack.json

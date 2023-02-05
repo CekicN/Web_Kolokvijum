@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models;
+using Microsoft.AspNetCore.Cors; 
 namespace Oktobar_2022.Controllers;
 
 [ApiController]
@@ -29,12 +30,14 @@ public class FotografijaController : ControllerBase
             ram.Select( p =>
             new
             {
+                id = p.ID,
                 Materijal = p.Materijal
             }
             )
         );
     }
 
+    //[EnableCors("CORS")]
     [Route("UzmiDimenziju")]
     [HttpGet]
     public async Task<ActionResult> UzmiDimenziju()
@@ -47,6 +50,17 @@ public class FotografijaController : ControllerBase
         return Ok(dim);
     }
 
+     [Route("UzmiPapir")]
+    [HttpGet]
+    public async Task<ActionResult> Uzmipapir()
+    {
+        var dim = await Context.Papiri.ToListAsync();
+
+        if(dim == null)
+            return BadRequest("Nije pronadjen ram sa tom dimenzijom");
+        
+        return Ok(dim);
+    }
 
     [Route("UzmiFotografiju")]
     [HttpGet]

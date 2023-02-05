@@ -19,7 +19,6 @@ namespace Septembar_2022
 
         [HttpPost]
         [Route("PreuzmiBiljku/{idP}/{idC}/{idL}/{idS}")]
-
         public async Task<ActionResult> PreuzmiBiljku(int idP, int idC, int idL, int idS)
         {
 
@@ -40,7 +39,7 @@ namespace Septembar_2022
             if(cvet == null)
                 return BadRequest("Ne postoji cvet");
 
-            var biljka = await context.Biljke.Where(p => p.Podrucje == podrucje && p.Cvet == cvet && p.List == list && p.Stablo == stablo).FirstOrDefaultAsync();
+            var biljka = await context.Biljke.Where(p => p.Podrucje == podrucje && p.Cvet == cvet && p.List == list && p.Stablo == stablo).ToListAsync();
             
             try
             {
@@ -105,7 +104,7 @@ namespace Septembar_2022
             }
         }
 
-        [Route("VratiPodrucje")]
+        [Route("VratiList")]
         [HttpGet]
         public async Task<ActionResult> VratiList()
         {   
@@ -124,7 +123,7 @@ namespace Septembar_2022
             }
         }
 
-        [Route("VratiPodrucje")]
+        [Route("VratiStablo")]
         [HttpGet]
         public async Task<ActionResult> VratiStablo()
         {   

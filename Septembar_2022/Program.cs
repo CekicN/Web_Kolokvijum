@@ -14,6 +14,14 @@ builder.Services.AddDbContext<Context>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("BiljkeCS"));
 });
+builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CORS", 
+                
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod());
+            });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,6 +32,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
+
+app.UseCors("CORS");
 
 app.UseAuthorization();
 

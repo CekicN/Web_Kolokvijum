@@ -1,5 +1,6 @@
 using Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Cors;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +14,14 @@ builder.Services.AddDbContext<FotoContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("BazaCS"));
 });
+builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CORS", 
+                
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod());
+            });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,6 +32,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
+
+app.UseCors("CORS");
 
 app.UseAuthorization();
 

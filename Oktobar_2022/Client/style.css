@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 5px;
+    border: 2px solid black;
+}
+.glavniDiv
+{
+    display: flex;
+    flex-direction: row;
+}
+.red
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+label{
+    text-align: start;
+}
+.pretraga
+{
+    border: 2px solid rgb(0, 0, 0);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slika
+{
+    border: 2px solid black;
+    flex:0 0 100px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+}
+.rezultat
+{
+    border: 2px solid black;
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}

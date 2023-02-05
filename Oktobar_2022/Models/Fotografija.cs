@@ -6,7 +6,7 @@ namespace Models
     {
         [Key]
         public int ID { get; set; }
-        int BrFotografija;
+        public int BrFotografija;
         public string Naziv { get; set; }
         public Papir Papir { get; set; }
         public Dimenzija Dimenzija { get; set; }
