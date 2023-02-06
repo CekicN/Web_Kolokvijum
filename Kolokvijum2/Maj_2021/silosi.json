@@ -1,0 +1,19 @@
+[
+    {
+        "naziv":"Zitopek",
+        "silos":[
+            {
+                "naziv":"silos1",
+                "kolicina":"1500"
+            },
+            {
+                "kolicina":"750",
+                "naziv":"silos2"
+            },
+            {
+                "kolicina":"2000",
+                "naziv":"silos3"
+            }
+        ]
+    }
+]

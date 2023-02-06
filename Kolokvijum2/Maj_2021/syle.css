@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.silosi
+{
+    display: flex;
+    justify-content: space-around;
+}
+.sil
+{
+    width: 80px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+}
+h1{
+    text-align: center;
+}
+
+.kol
+{
+    width: 100%;
+    height: 20px;
+    background-color: red;
+}
+select, input
+{
+    width:100px;
+}
+
+.red
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.dodaj
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+
+}
+.levi
+{
+    width: 100%;
+}
