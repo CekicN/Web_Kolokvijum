@@ -1,0 +1,14 @@
+[
+    {
+        "stolarija":"PVC",
+        "boja":"white"
+    },
+    {
+        "stolarija":"drvo",
+        "boja":"brown"
+    },
+    {
+        "stolarija":"aluminijum",
+        "boja":"grey"
+    }
+]

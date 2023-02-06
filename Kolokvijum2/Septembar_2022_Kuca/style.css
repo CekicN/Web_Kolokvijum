@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.red
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.glavniDiv
+{
+    display: flex;
+
+}
+.pretraga
+{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 400px;
+    border-right: 2px solid black;
+}
+select
+{
+    width: 300px;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid black;
+}
+.dugme
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.krov
+{
+    width: 0;
+    height: 0;
+    border: 105px solid transparent;
+    border-bottom: 105px solid black;
+}
+
+.kuca
+{
+    position: relative;
+    top: -80px;
+    right: -140px;
+}
+.zid
+{
+    width: 200px;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid green;
+}
+.p1
+{
+    width: 30px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+}
+.prozori
+{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.l1
+{
+    width: 15px;
+    height: 50px;
+    border-right: 1px solid black;
+}
+
+.vrata
+{
+    width: 30px;
+    height: 50px;
+    background-color: white;
+    align-self: center;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid black;
+}
