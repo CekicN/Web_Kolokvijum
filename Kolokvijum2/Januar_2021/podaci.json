@@ -1,0 +1,56 @@
+[
+    {
+        "id":"1",
+        "idGrada":"1",
+        "podaci":[
+            {"mesec":"Jan","temperatura":"0", "padavine":"82", "suncaniDani":"15"},
+            {"mesec":"Feb","temperatura":"2", "padavine":"300", "suncaniDani":"25"},
+            {"mesec":"Mar","temperatura":"10", "padavine":"200", "suncaniDani":"5"},
+            {"mesec":"Apr","temperatura":"15", "padavine":"250", "suncaniDani":"30"},
+            {"mesec":"maj","temperatura":"20", "padavine":"800", "suncaniDani":"28"},
+            {"mesec":"Jun","temperatura":"30", "padavine":"520", "suncaniDani":"10"},
+            {"mesec":"Jul","temperatura":"40", "padavine":"340", "suncaniDani":"5"},
+            {"mesec":"Avg","temperatura":"35", "padavine":"680", "suncaniDani":"26"},
+            {"mesec":"Sep","temperatura":"20", "padavine":"50", "suncaniDani":"30"},
+            {"mesec":"Okt","temperatura":"15", "padavine":"36", "suncaniDani":"78"},
+            {"mesec":"Nov","temperatura":"10", "padavine":"78", "suncaniDani":"10"},
+            {"mesec":"Dec","temperatura":"5", "padavine":"90", "suncaniDani":"15"}
+        ]
+    },
+    {
+        "id":"2",
+        "idGrada":"2",
+        "podaci":[
+            {"mesec":"Jan","temperatura":"0", "padavine":"82", "suncaniDani":"15"},
+            {"mesec":"Feb","temperatura":"2", "padavine":"300", "suncaniDani":"25"},
+            {"mesec":"Mar","temperatura":"10", "padavine":"200", "suncaniDani":"5"},
+            {"mesec":"Apr","temperatura":"15", "padavine":"250", "suncaniDani":"30"},
+            {"mesec":"maj","temperatura":"20", "padavine":"800", "suncaniDani":"28"},
+            {"mesec":"Jun","temperatura":"30", "padavine":"520", "suncaniDani":"10"},
+            {"mesec":"Jul","temperatura":"40", "padavine":"340", "suncaniDani":"5"},
+            {"mesec":"Avg","temperatura":"35", "padavine":"680", "suncaniDani":"26"},
+            {"mesec":"Sep","temperatura":"20", "padavine":"50", "suncaniDani":"30"},
+            {"mesec":"Okt","temperatura":"15", "padavine":"36", "suncaniDani":"78"},
+            {"mesec":"Nov","temperatura":"10", "padavine":"78", "suncaniDani":"10"},
+            {"mesec":"Dec","temperatura":"5", "padavine":"90", "suncaniDani":"15"}
+        ]
+    },
+    {
+        "id":"3",
+        "idGrada":"3",
+        "podaci":[
+            {"mesec":"Jan","temperatura":"0", "padavine":"82", "suncaniDani":"15"},
+            {"mesec":"Feb","temperatura":"8", "padavine":"300", "suncaniDani":"25"},
+            {"mesec":"Mar","temperatura":"12", "padavine":"200", "suncaniDani":"5"},
+            {"mesec":"Apr","temperatura":"13", "padavine":"250", "suncaniDani":"30"},
+            {"mesec":"maj","temperatura":"20", "padavine":"800", "suncaniDani":"28"},
+            {"mesec":"Jun","temperatura":"4", "padavine":"520", "suncaniDani":"10"},
+            {"mesec":"Jul","temperatura":"15", "padavine":"340", "suncaniDani":"5"},
+            {"mesec":"Avg","temperatura":"25", "padavine":"680", "suncaniDani":"26"},
+            {"mesec":"Sep","temperatura":"40", "padavine":"50", "suncaniDani":"30"},
+            {"mesec":"Okt","temperatura":"7", "padavine":"36", "suncaniDani":"78"},
+            {"mesec":"Nov","temperatura":"20", "padavine":"78", "suncaniDani":"10"},
+            {"mesec":"Dec","temperatura":"5", "padavine":"90", "suncaniDani":"15"}
+        ]
+    }
+]

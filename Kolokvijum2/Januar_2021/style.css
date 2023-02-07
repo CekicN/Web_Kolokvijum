@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1
+{
+    padding: 15px;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.radioDiv
+{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.poda
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.cont
+{
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid black;
+    width: 50px;
+    height: 150px;
+    align-items: center;
+
+}
+.pod
+{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+}
+.promeni
+{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promeni > input
+{
+    margin-bottom: 30px;
+}
+.promeni > p
+{
+    margin-bottom: 30px;
+}
